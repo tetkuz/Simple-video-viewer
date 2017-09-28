@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		383484C91F7CC01F00A748F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383484C81F7CC01F00A748F0 /* AppDelegate.swift */; };
+		383484CB1F7CC01F00A748F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383484CA1F7CC01F00A748F0 /* ViewController.swift */; };
+		383484CD1F7CC01F00A748F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383484CC1F7CC01F00A748F0 /* Assets.xcassets */; };
+		383484D01F7CC01F00A748F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383484CE1F7CC01F00A748F0 /* Main.storyboard */; };
+		383484D91F7CC49600A748F0 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383484D81F7CC49600A748F0 /* GStreamer.framework */; };
+		383484DF1F7CC70F00A748F0 /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 383484DE1F7CC70F00A748F0 /* GStreamerBackend.m */; };
+		383484E31F7CDDAE00A748F0 /* OpenglNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383484E21F7CDDAE00A748F0 /* OpenglNSView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		383484C51F7CC01F00A748F0 /* SimpleVideoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleVideoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		383484C81F7CC01F00A748F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		383484CA1F7CC01F00A748F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		383484CC1F7CC01F00A748F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		383484CF1F7CC01F00A748F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		383484D11F7CC01F00A748F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383484D81F7CC49600A748F0 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../../../Library/Frameworks/GStreamer.framework; sourceTree = "<group>"; };
+		383484DA1F7CC67E00A748F0 /* SimpleVideoViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleVideoViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		383484DD1F7CC70F00A748F0 /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GStreamerBackend.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		383484DE1F7CC70F00A748F0 /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GStreamerBackend.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		383484E21F7CDDAE00A748F0 /* OpenglNSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenglNSView.swift; sourceTree = "<group>"; };
+		383484E41F7CDF9900A748F0 /* GStreamerBackendDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GStreamerBackendDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		383484C21F7CC01F00A748F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383484D91F7CC49600A748F0 /* GStreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		383484BC1F7CC01F00A748F0 = {
+			isa = PBXGroup;
+			children = (
+				383484C71F7CC01F00A748F0 /* SimpleVideoViewer */,
+				383484C61F7CC01F00A748F0 /* Products */,
+				383484D71F7CC49600A748F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		383484C61F7CC01F00A748F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				383484C51F7CC01F00A748F0 /* SimpleVideoViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		383484C71F7CC01F00A748F0 /* SimpleVideoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				383484C81F7CC01F00A748F0 /* AppDelegate.swift */,
+				383484CA1F7CC01F00A748F0 /* ViewController.swift */,
+				383484CC1F7CC01F00A748F0 /* Assets.xcassets */,
+				383484CE1F7CC01F00A748F0 /* Main.storyboard */,
+				383484D11F7CC01F00A748F0 /* Info.plist */,
+				383484DA1F7CC67E00A748F0 /* SimpleVideoViewer-Bridging-Header.h */,
+				383484DD1F7CC70F00A748F0 /* GStreamerBackend.h */,
+				383484DE1F7CC70F00A748F0 /* GStreamerBackend.m */,
+				383484E41F7CDF9900A748F0 /* GStreamerBackendDelegate.h */,
+				383484E21F7CDDAE00A748F0 /* OpenglNSView.swift */,
+			);
+			path = SimpleVideoViewer;
+			sourceTree = "<group>";
+		};
+		383484D71F7CC49600A748F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				383484D81F7CC49600A748F0 /* GStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		383484C41F7CC01F00A748F0 /* SimpleVideoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 383484D41F7CC01F00A748F0 /* Build configuration list for PBXNativeTarget "SimpleVideoViewer" */;
+			buildPhases = (
+				383484C11F7CC01F00A748F0 /* Sources */,
+				383484C21F7CC01F00A748F0 /* Frameworks */,
+				383484C31F7CC01F00A748F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleVideoViewer;
+			productName = SimpleVideoViewer;
+			productReference = 383484C51F7CC01F00A748F0 /* SimpleVideoViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		383484BD1F7CC01F00A748F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "kiroru-inc.jp";
+				TargetAttributes = {
+					383484C41F7CC01F00A748F0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y48P6SY25X;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 383484C01F7CC01F00A748F0 /* Build configuration list for PBXProject "SimpleVideoViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 383484BC1F7CC01F00A748F0;
+			productRefGroup = 383484C61F7CC01F00A748F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				383484C41F7CC01F00A748F0 /* SimpleVideoViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		383484C31F7CC01F00A748F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383484CD1F7CC01F00A748F0 /* Assets.xcassets in Resources */,
+				383484D01F7CC01F00A748F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		383484C11F7CC01F00A748F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383484CB1F7CC01F00A748F0 /* ViewController.swift in Sources */,
+				383484DF1F7CC70F00A748F0 /* GStreamerBackend.m in Sources */,
+				383484E31F7CDDAE00A748F0 /* OpenglNSView.swift in Sources */,
+				383484C91F7CC01F00A748F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		383484CE1F7CC01F00A748F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				383484CF1F7CC01F00A748F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		383484D21F7CC01F00A748F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		383484D31F7CC01F00A748F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		383484D51F7CC01F00A748F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y48P6SY25X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "/Library/Frameworks/GStreamer.framework/Headers/**";
+				INFOPLIST_FILE = SimpleVideoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CFLAGS = "-I/Library/Frameworks/GStreamer.framework/Headers";
+				PRODUCT_BUNDLE_IDENTIFIER = kiroru.SimpleVideoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleVideoViewer/SimpleVideoViewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		383484D61F7CC01F00A748F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y48P6SY25X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "/Library/Frameworks/GStreamer.framework/Headers/**";
+				INFOPLIST_FILE = SimpleVideoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CFLAGS = "-I/Library/Frameworks/GStreamer.framework/Headers";
+				PRODUCT_BUNDLE_IDENTIFIER = kiroru.SimpleVideoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleVideoViewer/SimpleVideoViewer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		383484C01F7CC01F00A748F0 /* Build configuration list for PBXProject "SimpleVideoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383484D21F7CC01F00A748F0 /* Debug */,
+				383484D31F7CC01F00A748F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		383484D41F7CC01F00A748F0 /* Build configuration list for PBXNativeTarget "SimpleVideoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383484D51F7CC01F00A748F0 /* Debug */,
+				383484D61F7CC01F00A748F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 383484BD1F7CC01F00A748F0 /* Project object */;
+}
