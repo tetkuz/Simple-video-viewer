@@ -150,9 +150,7 @@ static void state_changed_cb (GstBus *bus, GstMessage *msg, GStreamerBackend *se
     g_main_context_push_thread_default(context);
 
     /* Build pipeline */
-    pipeline = gst_parse_launch("filesrc location=/path/to/your/movie.MP4 ! qtdemux name=demux"
-                                " demux. ! queue ! decodebin ! glimagesink"
-                                " demux. ! queue ! decodebin ! audioconvert ! autoaudiosink", &error);
+    pipeline = gst_parse_launch("playbin uri=https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4", &error);
     if (error) {
         gchar *message = g_strdup_printf("Unable to build pipeline: %s", error->message);
         g_clear_error (&error);
